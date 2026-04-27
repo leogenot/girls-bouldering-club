@@ -17,11 +17,11 @@ body {
     color: #F1F1F1;
 }
 .mwg_effect025 {
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    padding: 160px 0 80px;
 }
 .mwg_effect025 .container {
     display: flex;
