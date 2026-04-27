@@ -1,38 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
-
-/* NORMALIZE */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  appearance: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-/* NORMALIZE */
-
-body {
-  background: #121212;
-  color: #f1f1f1;
-}
 .mwg_effect028 {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: clip;
-  /* padding: 170px 0 60px; */
+  width: 100%;
 }
-
+.mwg_effect028 .header {
+  width: 100%;
+}
 .mwg_effect028 .header .top {
   width: 100%;
-  border-bottom: 1px solid rgb(74, 74, 74);
+  border-bottom: 1px solid var(--border-dark);
   padding: 25px;
 }
 .mwg_effect028 .header .top p {
   width: 60%;
   font:
-    500 normal 2.1vw / 0.9 'Inter',
+    500 normal 2.1vw/0.9 'Inter',
     sans-serif;
   letter-spacing: -0.03em;
 }
@@ -48,7 +33,7 @@ body {
 }
 .mwg_effect028 .header .drag p {
   text-transform: uppercase;
-  font: 500 normal 13px / normal 'IBM Plex Mono';
+  font: 500 normal 13px/normal 'IBM Plex Mono';
 }
 .mwg_effect028 .container {
   width: max-content;

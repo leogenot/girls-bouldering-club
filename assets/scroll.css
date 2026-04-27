@@ -1,0 +1,35 @@
+.mwg_effect009 .pin-height {
+  height: 600vh;
+}
+.mwg_effect009 .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.mwg_effect009 .center {
+  position: relative;
+  width: 100%;
+}
+.mwg_effect009 .sentence {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font:
+    500 normal 5vw/0.9 'Inter',
+    sans-serif;
+
+  @media (max-width: 768px) {
+    font-size: 7vw;
+  }
+}
+.mwg_effect009 .sentence span {
+  display: inline-block;
+  letter-spacing: -0.06em;
+}
+.mwg_effect009 .sentence:not(:first-child) {
+  position: absolute;
+  left: 0;
+  top: 0;
+}

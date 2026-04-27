@@ -1,0 +1,93 @@
+.mwg_effect025 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 160px 0 80px;
+}
+.mwg_effect025 .container {
+  display: flex;
+}
+.mwg_effect025 .title {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  font: 500 normal 4vw/0.9 'Inter', sans-serif;
+  letter-spacing: -0.03em;
+}
+.mwg_effect025 .card {
+  width: 20vw;
+  aspect-ratio: 0.8;
+}
+.mwg_effect025 .card:not(:first-child) {
+  margin: 0 0 0 -10vw;
+}
+.mwg_effect025 .card .content {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.6em;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+}
+.mwg_effect025 .card .content .top {
+  font: 500 normal 1.9vw/0.9 'Inter', sans-serif;
+  letter-spacing: -0.03em;
+}
+.mwg_effect025 .card .content .bottom {
+  font: 500 normal 1.1vw/1.3 'Inter', sans-serif;
+  letter-spacing: -0.03em;
+  border-top: 1px dashed #000;
+  padding: 25px 0 0;
+}
+.mwg_effect025 .card:nth-child(1) { z-index: 3; }
+.mwg_effect025 .card:nth-child(1) .content { background-color: #F14A3A; }
+.mwg_effect025 .card:nth-child(2) { z-index: 2; }
+.mwg_effect025 .card:nth-child(2) .content { background-color: #FB7350; }
+.mwg_effect025 .card:nth-child(3) { z-index: 7; }
+.mwg_effect025 .card:nth-child(3) .content { background-color: #F79C42; }
+.mwg_effect025 .card:nth-child(4) { z-index: 1; }
+.mwg_effect025 .card:nth-child(4) .content { background-color: #FFDF40; }
+.mwg_effect025 .card:nth-child(5) { z-index: 4; }
+.mwg_effect025 .card:nth-child(5) .content { background-color: #DEDA8D; }
+
+@media (max-width: 768px) {
+  .mwg_effect025 {
+    overflow: visible;
+  }
+  .mwg_effect025 .container {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    width: 100vw;
+    gap: 16px;
+    padding: 0 20px;
+    scroll-padding-left: 20px;
+    scrollbar-width: none;
+    align-items: center;
+  }
+  .mwg_effect025 .container::-webkit-scrollbar {
+    display: none;
+  }
+  .mwg_effect025 .card {
+    flex: 0 0 calc(100vw - 40px);
+    width: calc(100vw - 40px);
+    aspect-ratio: 3/4;
+    margin: 0 !important;
+    scroll-snap-align: start;
+  }
+  .mwg_effect025 .card .content .top {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  .mwg_effect025 .card .content .bottom {
+    font-size: 13px;
+    line-height: 1.3;
+  }
+  .mwg_effect025 .title {
+    font-size: 36px;
+  }
+}
