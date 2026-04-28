@@ -90,8 +90,8 @@
     -webkit-overflow-scrolling: touch;
     width: 100vw;
     gap: 16px;
-    padding: 0 20px;
-    scroll-padding-left: 20px;
+    padding: 0 25px;
+    scroll-padding-left: 25px;
     scrollbar-width: none;
     align-items: center;
   }
@@ -99,8 +99,8 @@
     display: none;
   }
   .mwg_effect025 .card {
-    flex: 0 0 calc(100vw - 40px);
-    width: calc(100vw - 40px);
+    flex: 0 0 calc(100vw - 50px);
+    width: calc(100vw - 50px);
     aspect-ratio: 1;
     margin: 0 !important;
     scroll-snap-align: start;

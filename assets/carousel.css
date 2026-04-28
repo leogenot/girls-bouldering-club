@@ -39,7 +39,7 @@
   width: max-content;
   white-space: nowrap;
   display: flex;
-  gap: 15px;
+  gap: 16px;
   padding: 0 1vw 0 0;
   user-select: none;
   cursor: grab;
