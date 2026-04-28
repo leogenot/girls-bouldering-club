@@ -31,13 +31,13 @@ window.addEventListener("DOMContentLoaded", () => {
 
     sentences.forEach((sentence, index) => {
         if (sentences[index + 1]) {
-            tl.to(sentences[index], { yPercent: -50, y: '-50vh', ease: 'power4.in' })
+            tl.to(sentences[index], { yPercent: -20, y: '-20vh', autoAlpha: 0, ease: 'power4.in' })
             tl.to(sentences[index].querySelectorAll('span'), {
-                yPercent: -50, y: '-50vh', stagger: -0.02, ease: 'power2.in'
+                yPercent: -20, y: '-20vh', stagger: -0.02, ease: 'power2.in'
             }, '<')
-            tl.from(sentences[index + 1], { yPercent: 50, y: '50vh', ease: 'power4.out' }, '<')
+            tl.from(sentences[index + 1], { yPercent: 20, y: '20vh', autoAlpha: 0, ease: 'power4.out' }, '<')
             tl.from(sentences[index + 1].querySelectorAll('span'), {
-                yPercent: 50, y: '50vh', ease: 'power2.out', stagger: -0.02
+                yPercent: 20, y: '20vh', ease: 'power2.out', stagger: -0.02
             }, '<')
         }
     })
