@@ -17,11 +17,13 @@
   display: flex;
   justify-content: center;
   font:
-    500 normal 5vw/0.9 'Inter',
+    500 normal clamp(28px, 5vw, 80px)/0.9 'Inter',
     sans-serif;
+}
 
-  @media (max-width: 768px) {
-    font-size: 7vw;
+@media (max-width: 768px) {
+  .mwg_effect009 .sentence {
+    font-size: clamp(22px, 7vw, 48px);
   }
 }
 .mwg_effect009 .sentence span {

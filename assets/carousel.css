@@ -17,7 +17,7 @@
 .mwg_effect028 .header .top p {
   width: 60%;
   font:
-    500 normal 2.1vw/1.1 'Inter',
+    500 normal clamp(16px, 2.1vw, 30px)/1.1 'Inter',
     sans-serif;
   letter-spacing: -0.03em;
 }
