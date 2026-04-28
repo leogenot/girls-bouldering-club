@@ -24,7 +24,11 @@
 }
 .mwg_effect044 .duplicate .footer p,
 .mwg_effect044 .duplicate .footer a {
-  color: var(--fg);
+  color: var(--accent);
+}
+.mwg_effect044 .duplicate .footer p:hover,
+.mwg_effect044 .duplicate .footer a:hover {
+  color: var(--accent);
 }
 .mwg_effect044 .line {
   display: flex;
@@ -33,7 +37,9 @@
 }
 .mwg_effect044 .line p,
 .mwg_effect044 .line a {
-  font: 500 normal 10.5vw/0.9 'Inter', sans-serif;
+  font:
+    500 normal 10.5vw/0.9 'Inter',
+    sans-serif;
   letter-spacing: -0.05em;
   text-transform: uppercase;
 }
@@ -81,5 +87,17 @@
   }
   .mwg_effect044 .star {
     width: 7vw;
+  }
+  .mwg_effect044 .duplicate {
+    mask-image: radial-gradient(circle at 50% 50%, #000 40%, transparent 60%);
+    -webkit-mask-image: radial-gradient(
+      circle at 50% 50%,
+      #000 40%,
+      transparent 60%
+    );
+  }
+  .mwg_effect044 .footer a,
+  .mwg_effect044 .footer p {
+    color: var(--accent);
   }
 }
